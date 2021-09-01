@@ -3,8 +3,8 @@
 A [Monolog][ext-monolog] based logger that replaces the default logger in [Symphony CMS][ext-Symphony CMS].
 
 -   [Installation](#installation)
--       [With Git and Composer](#with-git-and-composer)
--       [With Orchestra][#with-orchestra]
+    -   [With Git and Composer](#with-git-and-composer)
+    -   [With Orchestra](#with-orchestra)
 -   [Basic Usage](#basic-usage)
 -   [About](#about)
     -   [Requirements](#dependencies)
