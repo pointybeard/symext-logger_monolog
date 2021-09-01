@@ -1,0 +1,4214 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a22d56b760027dff39bce0d1ae3e6790",
+    "packages": [
+        {
+            "name": "monolog/monolog",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "71312564759a7db5b789296369c1a264efc43aad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/71312564759a7db5b789296369c1a264efc43aad",
+                "reference": "71312564759a7db5b789296369c1a264efc43aad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7",
+                "graylog2/gelf-php": "^1.4.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpspec/prophecy": "^1.6.1",
+                "phpstan/phpstan": "^0.12.91",
+                "phpunit/phpunit": "^8.5",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
+                "ruflin/elastica": ">=0.90 <7.0.1",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/2.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-23T07:42:52+00:00"
+        },
+        {
+            "name": "pointybeard/helpers",
+            "version": "1.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers.git",
+                "reference": "33b41adc5c28dc32d1dd17f375ed7de716ebdc0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers/zipball/33b41adc5c28dc32d1dd17f375ed7de716ebdc0c",
+                "reference": "33b41adc5c28dc32d1dd17f375ed7de716ebdc0c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-cli-colour": "^1.0",
+                "pointybeard/helpers-cli-input": "^1.2.0",
+                "pointybeard/helpers-cli-message": "^1.0",
+                "pointybeard/helpers-cli-progressbar": "^1.1.0",
+                "pointybeard/helpers-cli-prompt": "^1.0",
+                "pointybeard/helpers-exceptions-readabletrace": "^1.0",
+                "pointybeard/helpers-foundation-bnl": "^1.0",
+                "pointybeard/helpers-foundation-factory": "^1.0",
+                "pointybeard/helpers-functions-arrays": "^1.0",
+                "pointybeard/helpers-functions-cli": "^1.1.0",
+                "pointybeard/helpers-functions-debug": "^1.0",
+                "pointybeard/helpers-functions-files": "^1.0",
+                "pointybeard/helpers-functions-flags": "^1.0",
+                "pointybeard/helpers-functions-json": "^1.0",
+                "pointybeard/helpers-functions-numbers": "^1.0",
+                "pointybeard/helpers-functions-paths": "^1.1.0",
+                "pointybeard/helpers-functions-strings": "^1.1.0",
+                "pointybeard/helpers-functions-time": "^1.1",
+                "pointybeard/helpers-statistics-slidingaverage": "^1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A meta package containing helpful classes and functions for use in PHP.",
+            "homepage": "https://github.com/pointybeard/helpers",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers/issues",
+                "source": "https://github.com/pointybeard/helpers/tree/1.2.6"
+            },
+            "time": "2020-11-10T12:56:44+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-cli-colour",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-cli-colour.git",
+                "reference": "04f7070d6a6c70d64208b15ff1db128f1114b7e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-cli-colour/zipball/04f7070d6a6c70d64208b15ff1db128f1114b7e6",
+                "reference": "04f7070d6a6c70d64208b15ff1db128f1114b7e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "require-dev": {
+                "block8/php-docblock-checker": "~1.10",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides colour constants and a simple way to colourise strings for use on the command-line.",
+            "homepage": "https://github.com/pointybeard/helpers-cli-colour",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-cli-colour/issues",
+                "source": "https://github.com/pointybeard/helpers-cli-colour/tree/master",
+                "wiki": "https://github.com/pointybeard/helpers-cli-colour/wiki"
+            },
+            "time": "2019-05-05T10:11:59+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-cli-input",
+            "version": "1.2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-cli-input.git",
+                "reference": "9622c9825868cf4ad429ed7cd531175c02bdff94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-cli-input/zipball/9622c9825868cf4ad429ed7cd531175c02bdff94",
+                "reference": "9622c9825868cf4ad429ed7cd531175c02bdff94",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-foundation-factory": "~1.0",
+                "pointybeard/helpers-functions-flags": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Collection of classes for handling argv (and other) input when calling command-line scripts. Helps with parsing, collecting and validating arguments, options, and flags.",
+            "homepage": "https://github.com/pointybeard/helpers-cli-input",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-cli-input/issues",
+                "source": "https://github.com/pointybeard/helpers-cli-input/tree/1.2.2.2",
+                "wiki": "https://github.com/pointybeard/helpers-cli-input/wiki"
+            },
+            "time": "2019-11-28T03:33:52+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-cli-message",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-cli-message.git",
+                "reference": "2c66d7e9a033dca8a7d389362266866ac51023ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-cli-message/zipball/2c66d7e9a033dca8a7d389362266866ac51023ae",
+                "reference": "2c66d7e9a033dca8a7d389362266866ac51023ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6",
+                "pointybeard/helpers-cli-colour": "~1.0",
+                "pointybeard/helpers-functions-flags": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A class to make it easier to print messages to the command-line",
+            "homepage": "https://github.com/pointybeard/helpers-cli-message",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-cli-message/issues",
+                "source": "https://github.com/pointybeard/helpers-cli-message/tree/1.0.0",
+                "wiki": "https://github.com/pointybeard/helpers-cli-message/wiki"
+            },
+            "time": "2019-05-16T06:43:08+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-cli-progressbar",
+            "version": "1.1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-cli-progressbar.git",
+                "reference": "31666f2f3175a4a747628a1817315f2b2a5af82a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-cli-progressbar/zipball/31666f2f3175a4a747628a1817315f2b2a5af82a",
+                "reference": "31666f2f3175a4a747628a1817315f2b2a5af82a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-cli-colour": "~1.0",
+                "pointybeard/helpers-functions-cli": "~1.1",
+                "pointybeard/helpers-functions-strings": "~1.1",
+                "pointybeard/helpers-functions-time": "~1.0",
+                "pointybeard/helpers-statistics-slidingaverage": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Cli\\ProgressBar\\": "src/ProgressBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Utility for rendering a progress bar to the command line in PHP",
+            "homepage": "https://github.com/pointybeard/helpers-cli-progressbar",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-cli-progressbar/issues",
+                "source": "https://github.com/pointybeard/helpers-cli-progressbar/tree/master"
+            },
+            "time": "2020-04-23T00:16:00+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-cli-prompt",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-cli-prompt.git",
+                "reference": "e7f3fca6b88cb0f6071abc2e7219d081450ec795"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-cli-prompt/zipball/e7f3fca6b88cb0f6071abc2e7219d081450ec795",
+                "reference": "e7f3fca6b88cb0f6071abc2e7219d081450ec795",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6",
+                "pointybeard/helpers-cli-message": "~1.0",
+                "pointybeard/helpers-functions-cli": "~1.0",
+                "pointybeard/helpers-functions-flags": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Class for asking for input on the command-line",
+            "homepage": "https://github.com/pointybeard/helpers-cli-prompt",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-cli-prompt/issues",
+                "source": "https://github.com/pointybeard/helpers-cli-prompt/tree/1.0.0",
+                "wiki": "https://github.com/pointybeard/helpers-cli-prompt/wiki"
+            },
+            "time": "2019-05-16T06:59:57+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-exceptions-readabletrace",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-exceptions-readabletrace.git",
+                "reference": "d41d5bf8885a0f59e4953db7f72b5199733c1304"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-exceptions-readabletrace/zipball/d41d5bf8885a0f59e4953db7f72b5199733c1304",
+                "reference": "d41d5bf8885a0f59e4953db7f72b5199733c1304",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-functions-debug": "~1",
+                "pointybeard/helpers-functions-paths": "~1",
+                "pointybeard/helpers-functions-strings": "~1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Exceptions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides an exception base class that includes method getReadableTrace(), giving simple access to a plain-text, readable, backtrace string.",
+            "homepage": "https://github.com/pointybeard/helpers-exceptions-readabletrace",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-exceptions-readabletrace/issues",
+                "source": "https://github.com/pointybeard/helpers-exceptions-readabletrace/tree/1.0.2",
+                "wiki": "https://github.com/pointybeard/helpers-exceptions-readabletrace/wiki"
+            },
+            "time": "2019-05-26T10:02:32+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-foundation-bnl",
+            "version": "1.0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-foundation-bnl.git",
+                "reference": "126be332ae356dd7717e9937f62db0680a9e433a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-foundation-bnl/zipball/126be332ae356dd7717e9937f62db0680a9e433a",
+                "reference": "126be332ae356dd7717e9937f62db0680a9e433a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-exceptions-readabletrace": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Foundation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides broadcaster & listener pattern classes",
+            "homepage": "https://github.com/pointybeard/helpers-foundation-bnl",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-foundation-bnl/issues",
+                "source": "https://github.com/pointybeard/helpers-foundation-bnl/tree/master",
+                "wiki": "https://github.com/pointybeard/helpers-foundation-bnl/wiki"
+            },
+            "time": "2020-03-29T05:54:14+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-foundation-factory",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-foundation-factory.git",
+                "reference": "852b887002f81b1f95aadcff0df14ccdbc586466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-foundation-factory/zipball/852b887002f81b1f95aadcff0df14ccdbc586466",
+                "reference": "852b887002f81b1f95aadcff0df14ccdbc586466",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-functions-strings": "~1.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Foundation\\": "src/"
+                },
+                "files": [
+                    "src/Factory/Factory.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides foundation factory classes and factory design pattern functionality",
+            "homepage": "https://github.com/pointybeard/helpers-foundation-factory",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-foundation-factory/issues",
+                "source": "https://github.com/pointybeard/helpers-foundation-factory/tree/1.0.4",
+                "wiki": "https://github.com/pointybeard/helpers-foundation-factory/wiki"
+            },
+            "time": "2019-06-05T12:27:19+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-arrays",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-arrays.git",
+                "reference": "f17675bd4ed9a27d47a5f085ced0bdd3cc295990"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-arrays/zipball/f17675bd4ed9a27d47a5f085ced0bdd3cc295990",
+                "reference": "f17675bd4ed9a27d47a5f085ced0bdd3cc295990",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "require-dev": {
+                "block8/php-docblock-checker": "~1.10",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Functions\\": "src/"
+                },
+                "files": [
+                    "src/Arrays/Arrays.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of helpful functions related to arrays and array manipulation",
+            "homepage": "https://github.com/pointybeard/helpers-functions-arrays",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-arrays/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-arrays/tree/1.0.1",
+                "wiki": "https://github.com/pointybeard/helpers-functions-arrays/wiki"
+            },
+            "time": "2019-05-12T04:20:41+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-cli",
+            "version": "1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-cli.git",
+                "reference": "b9a3034788e0083afe66c85d6d1978798799964e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-cli/zipball/b9a3034788e0083afe66c85d6d1978798799964e",
+                "reference": "b9a3034788e0083afe66c85d6d1978798799964e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-cli-colour": "~1.0",
+                "pointybeard/helpers-cli-input": "~1.2.0",
+                "pointybeard/helpers-exceptions-readabletrace": "~1.0.0",
+                "pointybeard/helpers-functions-arrays": "~1.0",
+                "pointybeard/helpers-functions-debug": "~1.0",
+                "pointybeard/helpers-functions-flags": "~1.0",
+                "pointybeard/helpers-functions-strings": "~1.1"
+            },
+            "require-dev": {
+                "damianopetrungaro/php-commitizen": "^0.1.0",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "php-parallel-lint/php-console-highlighter": "^0.5.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Functions\\": "src/"
+                },
+                "files": [
+                    "src/Cli/Cli.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions relating to the command-line",
+            "homepage": "https://github.com/pointybeard/helpers-functions-cli",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-cli/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-cli/tree/1.1.10",
+                "wiki": "https://github.com/pointybeard/helpers-functions-cli/wiki"
+            },
+            "time": "2021-07-29T04:37:32+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-debug",
+            "version": "1.0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-debug.git",
+                "reference": "3562931ffebcb8a6306b3636dc76048445cb5a53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-debug/zipball/3562931ffebcb8a6306b3636dc76048445cb5a53",
+                "reference": "3562931ffebcb8a6306b3636dc76048445cb5a53",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-functions-paths": "~1",
+                "pointybeard/helpers-functions-strings": "~1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Debug/Debug.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of helpful functions to assist with debugging",
+            "homepage": "https://github.com/pointybeard/helpers-functions-debug",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-debug/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-debug/tree/1.0.1.2",
+                "wiki": "https://github.com/pointybeard/helpers-functions-debug/wiki"
+            },
+            "time": "2020-11-03T10:57:00+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-files",
+            "version": "1.0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-files.git",
+                "reference": "80b588832292699b501a868293331b319cf337bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-files/zipball/80b588832292699b501a868293331b319cf337bc",
+                "reference": "80b588832292699b501a868293331b319cf337bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-exceptions-readabletrace": "~1.0.0",
+                "pointybeard/helpers-functions-cli": "~1.1.0",
+                "pointybeard/helpers-functions-flags": "~1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Functions\\": "src/"
+                },
+                "files": [
+                    "src/Files/Files.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of helpful functions related to creating and modifying files and directories",
+            "homepage": "https://github.com/pointybeard/helpers-functions-files",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-files/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-files/tree/1.0.0.3"
+            },
+            "time": "2020-11-08T02:32:59+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-flags",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-flags.git",
+                "reference": "f336e542e97bb544ef686b94f41496aab76d09ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-flags/zipball/f336e542e97bb544ef686b94f41496aab76d09ed",
+                "reference": "f336e542e97bb544ef686b94f41496aab76d09ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "require-dev": {
+                "block8/php-docblock-checker": "~1.10",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Flags/Flags.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions for handling bitwise flags",
+            "homepage": "https://github.com/pointybeard/helpers-functions-flags",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-flags/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-flags/tree/1.0.0",
+                "wiki": "https://github.com/pointybeard/helpers-functions-flags/wiki"
+            },
+            "time": "2019-05-07T22:31:38+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-json",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-json.git",
+                "reference": "cf5b491377f481ee52697481d3828fd3c890d6b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-json/zipball/cf5b491377f481ee52697481d3828fd3c890d6b1",
+                "reference": "cf5b491377f481ee52697481d3828fd3c890d6b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-functions-flags": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Json/Json.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions for working with JSON files and strings",
+            "homepage": "https://github.com/pointybeard/helpers-functions-json",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-json/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-json/tree/1.0.0",
+                "wiki": "https://github.com/pointybeard/helpers-functions-json/wiki"
+            },
+            "time": "2019-06-08T11:21:26+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-numbers",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-numbers.git",
+                "reference": "b8f346eb0b57229a6051b4a0d719c5adb058051f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-numbers/zipball/b8f346eb0b57229a6051b4a0d719c5adb058051f",
+                "reference": "b8f346eb0b57229a6051b4a0d719c5adb058051f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Numbers/Numbers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions for manipulating numbers",
+            "homepage": "https://github.com/pointybeard/helpers-functions-numbers",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-numbers/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-numbers/tree/1.0.0"
+            },
+            "time": "2020-04-09T23:10:40+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-paths",
+            "version": "1.1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-paths.git",
+                "reference": "262dc45d3b531ff2f1e529f56e0ab1715a22159c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-paths/zipball/262dc45d3b531ff2f1e529f56e0ab1715a22159c",
+                "reference": "262dc45d3b531ff2f1e529f56e0ab1715a22159c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Functions\\": "src/"
+                },
+                "files": [
+                    "src/Paths/Paths.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of helpful functions related to paths, directories, and files names",
+            "homepage": "https://github.com/pointybeard/helpers-functions-paths",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-paths/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-paths/tree/1.1.0.1",
+                "wiki": "https://github.com/pointybeard/helpers-functions-paths/wiki"
+            },
+            "time": "2020-11-10T13:13:10+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-strings",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-strings.git",
+                "reference": "ded9468690fb023a1f057562dc5223f365f035f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-strings/zipball/ded9468690fb023a1f057562dc5223f365f035f9",
+                "reference": "ded9468690fb023a1f057562dc5223f365f035f9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Strings/Strings.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions for manipulating strings",
+            "homepage": "https://github.com/pointybeard/helpers-functions-strings",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-strings/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-strings/tree/master"
+            },
+            "time": "2020-04-09T10:15:14+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-functions-time",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-functions-time.git",
+                "reference": "cf71ae2cf4b36e8d9a8206f29857a447aefd5993"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-functions-time/zipball/cf71ae2cf4b36e8d9a8206f29857a447aefd5993",
+                "reference": "cf71ae2cf4b36e8d9a8206f29857a447aefd5993",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "pointybeard/helpers-functions-flags": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Time/Time.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of functions used to manipulate time values",
+            "homepage": "https://github.com/pointybeard/helpers-functions-time",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-functions-time/issues",
+                "source": "https://github.com/pointybeard/helpers-functions-time/tree/1.1.0"
+            },
+            "time": "2020-04-17T02:24:29+00:00"
+        },
+        {
+            "name": "pointybeard/helpers-statistics-slidingaverage",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/helpers-statistics-slidingaverage.git",
+                "reference": "b5b2dc67ebcd7f97bb5f9b0ef90cee4100f8c91b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/helpers-statistics-slidingaverage/zipball/b5b2dc67ebcd7f97bb5f9b0ef90cee4100f8c91b",
+                "reference": "b5b2dc67ebcd7f97bb5f9b0ef90cee4100f8c91b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "require-dev": {
+                "block8/php-docblock-checker": "~1.10",
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Helpers\\Statistics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ring buffer for calculating average of a changing set; helps to reduce jitter.",
+            "homepage": "https://github.com/pointybeard/helpers-statistics-slidingaverage",
+            "support": {
+                "issues": "https://github.com/pointybeard/helpers-statistics-slidingaverage/issues",
+                "source": "https://github.com/pointybeard/helpers-statistics-slidingaverage/tree/1.0.2",
+                "wiki": "https://github.com/pointybeard/helpers-statistics-slidingaverage/wiki"
+            },
+            "time": "2019-05-05T10:13:53+00:00"
+        },
+        {
+            "name": "pointybeard/property-bag",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/property-bag.git",
+                "reference": "01886e40a161d05c3973dede02aef051cd524a70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/property-bag/zipball/01886e40a161d05c3973dede02aef051cd524a70",
+                "reference": "01886e40a161d05c3973dede02aef051cd524a70",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\PropertyBag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Set of classes for managing key/value pairs.",
+            "support": {
+                "issues": "https://github.com/pointybeard/property-bag/issues",
+                "source": "https://github.com/pointybeard/property-bag/tree/master",
+                "wiki": "https://github.com/pointybeard/property-bag/wiki"
+            },
+            "time": "2018-11-11T12:19:01+00:00"
+        },
+        {
+            "name": "pointybeard/symphony-extended",
+            "version": "1.0.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/symphony-extended.git",
+                "reference": "9e9bb27d830021966ca78cd97e3f312f7d419a59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/symphony-extended/zipball/9e9bb27d830021966ca78cd97e3f312f7d419a59",
+                "reference": "9e9bb27d830021966ca78cd97e3f312f7d419a59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "pointybeard/helpers": "^1.2.0",
+                "pointybeard/symphony-extension-asset-management": "^0.1.0",
+                "pointybeard/symphony-pdo": "^0.1.0",
+                "pointybeard/symphony-section-builder": "~0.2.0",
+                "psr/container": "^2.0",
+                "symfony/http-foundation": "^5.0"
+            },
+            "require-dev": {
+                "damianopetrungaro/php-commitizen": "^0.1.0",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "php-parallel-lint/php-console-highlighter": "^0.5.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Symphony\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of extended Symphony CMS base classes that can be extended to add extra features and helpers.",
+            "homepage": "https://github.com/pointybeard/symphony-extended",
+            "support": {
+                "issues": "https://github.com/pointybeard/symphony-extended/issues",
+                "source": "https://github.com/pointybeard/symphony-extended/tree/1.0.1.13"
+            },
+            "time": "2021-09-01T01:43:53+00:00"
+        },
+        {
+            "name": "pointybeard/symphony-extension-asset-management",
+            "version": "0.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/symphony-extension-asset-management.git",
+                "reference": "3521d1d44ceb13e49dd3065a5df4a5588c123e8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/symphony-extension-asset-management/zipball/3521d1d44ceb13e49dd3065a5df4a5588c123e8a",
+                "reference": "3521d1d44ceb13e49dd3065a5df4a5588c123e8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "pointybeard/helpers": "^1.2.0",
+                "pointybeard/symphony-pdo": "^0.1.0"
+            },
+            "require-dev": {
+                "damianopetrungaro/php-commitizen": "^0.1.0",
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Symphony\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides classes and interfaces to help manage custom Events, Datasources, Commands, Fields, and Content when enabling, disabling, installing, and uninstalling an Extension.",
+            "homepage": "https://github.com/pointybeard/symphony-extension-asset-management",
+            "keywords": [
+                "php",
+                "symphony",
+                "symphonycms"
+            ],
+            "support": {
+                "issues": "https://github.com/pointybeard/symphony-extension-asset-management/issues",
+                "source": "https://github.com/pointybeard/symphony-extension-asset-management/tree/0.1.11"
+            },
+            "time": "2020-12-10T11:49:09+00:00"
+        },
+        {
+            "name": "pointybeard/symphony-pdo",
+            "version": "0.1.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/symphony-pdo.git",
+                "reference": "86935141197ed04d44aac97f26b7c20722af8d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/symphony-pdo/zipball/86935141197ed04d44aac97f26b7c20722af8d00",
+                "reference": "86935141197ed04d44aac97f26b7c20722af8d00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SymphonyPDO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Wraps the core Symphony CMS database connection with a PDO based library",
+            "homepage": "https://github.com/pointybeard/symphony-pdo",
+            "keywords": [
+                "database",
+                "pdo",
+                "symphony",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/pointybeard/symphony-pdo/issues",
+                "source": "https://github.com/pointybeard/symphony-pdo/tree/0.1.7.4",
+                "wiki": "https://github.com/pointybeard/symphony-pdo/wiki"
+            },
+            "time": "2021-05-20T08:10:38+00:00"
+        },
+        {
+            "name": "pointybeard/symphony-section-builder",
+            "version": "0.2.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pointybeard/symphony-section-builder.git",
+                "reference": "896ca511ddf0177804cf1cab2279747d1ea940ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pointybeard/symphony-section-builder/zipball/896ca511ddf0177804cf1cab2279747d1ea940ab",
+                "reference": "896ca511ddf0177804cf1cab2279747d1ea940ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "pointybeard/helpers": "~1.2.0",
+                "pointybeard/property-bag": "^1.0",
+                "pointybeard/symphony-pdo": "~0.1.0"
+            },
+            "require-dev": {
+                "damianopetrungaro/php-commitizen": "^0.1.2",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "squizlabs/php_codesniffer": "~3.0",
+                "symphonycms/symphonycms": "dev-essentials"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pointybeard\\Symphony\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alannah Kearney",
+                    "email": "hi@alannahkearney.com",
+                    "homepage": "http://alannahkearney.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A set of classes and scripts for automating the creation and updating of sections and their fields.",
+            "homepage": "https://github.com/pointybeard/symphony-section-builder",
+            "keywords": [
+                "php",
+                "symphony",
+                "symphonycms"
+            ],
+            "support": {
+                "issues": "https://github.com/pointybeard/symphony-section-builder/issues",
+                "source": "https://github.com/pointybeard/symphony-section-builder/tree/master"
+            },
+            "time": "2020-04-23T20:13:57+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "2ae37329ee82f91efadc282cc2d527fd6065a5ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/2ae37329ee82f91efadc282cc2d527fd6065a5ef",
+                "reference": "2ae37329ee82f91efadc282cc2d527fd6065a5ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.1"
+            },
+            "time": "2021-03-24T13:40:57+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5f38c8804a9e97d23e0c8d63341088cd8a22d627",
+                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-23T23:28:01+00:00"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v5.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "e36c8e5502b4f3f0190c675f1c1f1248a64f04e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e36c8e5502b4f3f0190c675f1c1f1248a64f04e5",
+                "reference": "e36c8e5502b4f3f0190c675f1c1f1248a64f04e5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-mbstring": "~1.1",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "require-dev": {
+                "predis/predis": "~1.0",
+                "symfony/cache": "^4.4|^5.0",
+                "symfony/expression-language": "^4.4|^5.0",
+                "symfony/mime": "^4.4|^5.0"
+            },
+            "suggest": {
+                "symfony/mime": "To use the file extension guesser"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Defines an object-oriented layer for the HTTP specification",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-foundation/tree/v5.3.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-27T11:20:35+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "reference": "9174a3d80210dca8daa7f31fec659150bbeabfc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-27T12:26:48+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-28T13:41:28+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "composer/semver",
+            "version": "3.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/31f3ea725711245195f62e54ffa402d8ef2fdba9",
+                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.54",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/3.2.5"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-24T12:41:47+00:00"
+        },
+        {
+            "name": "composer/xdebug-handler",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/xdebug-handler.git",
+                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/84674dd3a7575ba617f5a76d7e9e29a7d3891339",
+                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0",
+                "psr/log": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\XdebugHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Stevenson",
+                    "email": "john-stevenson@blueyonder.co.uk"
+                }
+            ],
+            "description": "Restarts a process without Xdebug.",
+            "keywords": [
+                "Xdebug",
+                "performance"
+            ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/xdebug-handler/issues",
+                "source": "https://github.com/composer/xdebug-handler/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-31T17:03:58+00:00"
+        },
+        {
+            "name": "damianopetrungaro/php-commitizen",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/damianopetrungaro/php-commitizen.git",
+                "reference": "3cdaefe8cfe30134f120231de277d36b93c144ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/damianopetrungaro/php-commitizen/zipball/3cdaefe8cfe30134f120231de277d36b93c144ba",
+                "reference": "3cdaefe8cfe30134f120231de277d36b93c144ba",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "^4.0"
+            },
+            "require-dev": {
+                "php-mock/php-mock-prophecy": "^0.0.2",
+                "phpunit/phpunit": "^7.0"
+            },
+            "bin": [
+                "php-commitizen"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Damianopetrungaro\\PHPCommitizen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Damiano Petrungaro",
+                    "email": "damianopetrungaro@gmail.com"
+                }
+            ],
+            "description": "Help writing Git commit following conventional commit specs",
+            "keywords": [
+                "atomic",
+                "atomic commit",
+                "commit",
+                "conventional commit",
+                "conventionalcommit",
+                "git"
+            ],
+            "support": {
+                "issues": "https://github.com/damianopetrungaro/php-commitizen/issues",
+                "source": "https://github.com/damianopetrungaro/php-commitizen/tree/master"
+            },
+            "time": "2018-02-21T15:59:13+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "1.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "5b668aef16090008790395c02c893b1ba13f7e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5b668aef16090008790395c02c893b1ba13f7e08",
+                "reference": "5b668aef16090008790395c02c893b1ba13f7e08",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "ext-tokenizer": "*",
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
+            },
+            "require-dev": {
+                "doctrine/cache": "^1.11 || ^2.0",
+                "doctrine/coding-standard": "^6.0 || ^8.1",
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
+                "symfony/cache": "^4.4 || ^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.13.2"
+            },
+            "time": "2021-08-05T19:00:23+00:00"
+        },
+        {
+            "name": "doctrine/instantiator",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^8.0",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "https://ocramius.github.io/"
+                }
+            ],
+            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
+            "keywords": [
+                "constructor",
+                "instantiate"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/instantiator/issues",
+                "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-10T18:47:58+00:00"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "e864bbf5904cb8f5bb334f99209b48018522f042"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e864bbf5904cb8f5bb334f99209b48018522f042",
+                "reference": "e864bbf5904cb8f5bb334f99209b48018522f042",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "lexer",
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-25T17:44:05+00:00"
+        },
+        {
+            "name": "friendsofphp/php-cs-fixer",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
+                "reference": "cf4cedb9e8991c2daa94a756176d81bf487e4c4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/cf4cedb9e8991c2daa94a756176d81bf487e4c4b",
+                "reference": "cf4cedb9e8991c2daa94a756176d81bf487e4c4b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^3.2",
+                "composer/xdebug-handler": "^2.0",
+                "doctrine/annotations": "^1.12",
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": "^7.1.3 || ^8.0",
+                "php-cs-fixer/diff": "^2.0",
+                "symfony/console": "^4.4.20 || ^5.1.3",
+                "symfony/event-dispatcher": "^4.4.20 || ^5.0",
+                "symfony/filesystem": "^4.4.20 || ^5.0",
+                "symfony/finder": "^4.4.20 || ^5.0",
+                "symfony/options-resolver": "^4.4.20 || ^5.0",
+                "symfony/polyfill-php72": "^1.23",
+                "symfony/polyfill-php81": "^1.23",
+                "symfony/process": "^4.4.20 || ^5.0",
+                "symfony/stopwatch": "^4.4.20 || ^5.0"
+            },
+            "require-dev": {
+                "justinrainbow/json-schema": "^5.2",
+                "keradus/cli-executor": "^1.4",
+                "mikey179/vfsstream": "^1.6.8",
+                "php-coveralls/php-coveralls": "^2.4.3",
+                "php-cs-fixer/accessible-object": "^1.1",
+                "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.2",
+                "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.2.1",
+                "phpspec/prophecy": "^1.10.3",
+                "phpspec/prophecy-phpunit": "^1.1 || ^2.0",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.14 || ^9.5",
+                "phpunitgoodpractices/polyfill": "^1.5",
+                "phpunitgoodpractices/traits": "^1.9.1",
+                "symfony/phpunit-bridge": "^5.2.4",
+                "symfony/yaml": "^4.4.20 || ^5.0"
+            },
+            "suggest": {
+                "ext-dom": "For handling output formats in XML",
+                "ext-mbstring": "For handling non-UTF8 characters.",
+                "symfony/polyfill-mbstring": "When enabling `ext-mbstring` is not possible."
+            },
+            "bin": [
+                "php-cs-fixer"
+            ],
+            "type": "application",
+            "autoload": {
+                "psr-4": {
+                    "PhpCsFixer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Dariusz Rumiński",
+                    "email": "dariusz.ruminski@gmail.com"
+                }
+            ],
+            "description": "A tool to automatically fix PHP code style",
+            "support": {
+                "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/keradus",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-08-29T20:16:20+00:00"
+        },
+        {
+            "name": "php-cs-fixer/diff",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-CS-Fixer/diff.git",
+                "reference": "29dc0d507e838c4580d018bd8b5cb412474f7ec3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/diff/zipball/29dc0d507e838c4580d018bd8b5cb412474f7ec3",
+                "reference": "29dc0d507e838c4580d018bd8b5cb412474f7ec3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3 || ^7.0",
+                "symfony/process": "^3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "sebastian/diff v3 backport support for PHP 5.6+",
+            "homepage": "https://github.com/PHP-CS-Fixer",
+            "keywords": [
+                "diff"
+            ],
+            "support": {
+                "issues": "https://github.com/PHP-CS-Fixer/diff/issues",
+                "source": "https://github.com/PHP-CS-Fixer/diff/tree/v2.0.2"
+            },
+            "time": "2020-10-14T08:32:19+00:00"
+        },
+        {
+            "name": "php-mock/php-mock",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mock/php-mock.git",
+                "reference": "bfa2d17d64dbf129073a7ba2051a96ce52749570"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mock/php-mock/zipball/bfa2d17d64dbf129073a7ba2051a96ce52749570",
+                "reference": "bfa2d17d64dbf129073a7ba2051a96ce52749570",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "phpunit/php-text-template": "^1"
+            },
+            "replace": {
+                "malkusch/php-mock": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "suggest": {
+                "php-mock/php-mock-mockery": "Allows using PHPMockery for Mockery integration",
+                "php-mock/php-mock-phpunit": "Allows integration into PHPUnit testcase with the trait PHPMock."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\": [
+                        "classes/",
+                        "tests/unit/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP-Mock can mock built-in PHP functions (e.g. time()). PHP-Mock relies on PHP's namespace fallback policy. No further extension is needed.",
+            "homepage": "https://github.com/php-mock/php-mock",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mock/php-mock/issues",
+                "source": "https://github.com/php-mock/php-mock/tree/master"
+            },
+            "time": "2015-11-11T22:37:09+00:00"
+        },
+        {
+            "name": "php-mock/php-mock-integration",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mock/php-mock-integration.git",
+                "reference": "e83fb65dd20cd3cf250d554cbd4682b96b684f4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mock/php-mock-integration/zipball/e83fb65dd20cd3cf250d554cbd4682b96b684f4b",
+                "reference": "e83fb65dd20cd3cf250d554cbd4682b96b684f4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "php-mock/php-mock": "^1",
+                "phpunit/php-text-template": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\integration\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Integration package for PHP-Mock",
+            "homepage": "https://github.com/php-mock/php-mock-integration",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mock/php-mock-integration/issues",
+                "source": "https://github.com/php-mock/php-mock-integration/tree/master"
+            },
+            "time": "2015-10-26T21:21:42+00:00"
+        },
+        {
+            "name": "php-mock/php-mock-prophecy",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mock/php-mock-prophecy.git",
+                "reference": "9aaae9952971aedc16daed9f334e65c80f056248"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mock/php-mock-prophecy/zipball/9aaae9952971aedc16daed9f334e65c80f056248",
+                "reference": "9aaae9952971aedc16daed9f334e65c80f056248",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "php-mock/php-mock-integration": "^1",
+                "phpspec/prophecy": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\prophecy\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mock built-in PHP functions (e.g. time()) with Prophecy. This package relies on PHP's namespace fallback policy. No further extension is needed.",
+            "homepage": "https://github.com/php-mock/php-mock-prophecy",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "prophecy",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mock/php-mock-prophecy/issues",
+                "source": "https://github.com/php-mock/php-mock-prophecy/tree/master"
+            },
+            "time": "2016-05-13T12:02:19+00:00"
+        },
+        {
+            "name": "php-parallel-lint/php-parallel-lint",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-parallel-lint/PHP-Parallel-Lint.git",
+                "reference": "761f3806e30239b5fcd90a0a45d41dc2138de192"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Parallel-Lint/zipball/761f3806e30239b5fcd90a0a45d41dc2138de192",
+                "reference": "761f3806e30239b5fcd90a0a45d41dc2138de192",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3.0"
+            },
+            "replace": {
+                "grogy/php-parallel-lint": "*",
+                "jakub-onderka/php-parallel-lint": "*"
+            },
+            "require-dev": {
+                "nette/tester": "^1.3 || ^2.0",
+                "php-parallel-lint/php-console-highlighter": "~0.3",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "suggest": {
+                "php-parallel-lint/php-console-highlighter": "Highlight syntax in code snippet"
+            },
+            "bin": [
+                "parallel-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "ahoj@jakubonderka.cz"
+                }
+            ],
+            "description": "This tool check syntax of PHP files about 20x faster than serial check.",
+            "homepage": "https://github.com/php-parallel-lint/PHP-Parallel-Lint",
+            "support": {
+                "issues": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/issues",
+                "source": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/tree/v1.3.1"
+            },
+            "time": "2021-08-13T05:35:13+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-common",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "opensource@ijaap.nl"
+                }
+            ],
+            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+            "homepage": "http://www.phpdoc.org",
+            "keywords": [
+                "FQSEN",
+                "phpDocumentor",
+                "phpdoc",
+                "reflection",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
+            "time": "2020-06-27T09:03:43+00:00"
+        },
+        {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
+                }
+            ],
+            "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+            },
+            "time": "2020-09-03T19:13:55+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0"
+            },
+            "require-dev": {
+                "ext-tokenizer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "phpDocumentor\\Reflection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "me@mikevanriel.com"
+                }
+            ],
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.4.0"
+            },
+            "time": "2020-09-17T18:55:26+00:00"
+        },
+        {
+            "name": "phpspec/prophecy",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/prophecy.git",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/instantiator": "^1.2",
+                "php": "^7.2 || ~8.0, <8.1",
+                "phpdocumentor/reflection-docblock": "^5.2",
+                "sebastian/comparator": "^3.0 || ^4.0",
+                "sebastian/recursion-context": "^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                },
+                {
+                    "name": "Marcello Duarte",
+                    "email": "marcello.duarte@gmail.com"
+                }
+            ],
+            "description": "Highly opinionated mocking framework for PHP 5.3+",
+            "homepage": "https://github.com/phpspec/prophecy",
+            "keywords": [
+                "Double",
+                "Dummy",
+                "fake",
+                "mock",
+                "spy",
+                "stub"
+            ],
+            "support": {
+                "issues": "https://github.com/phpspec/prophecy/issues",
+                "source": "https://github.com/phpspec/prophecy/tree/1.13.0"
+            },
+            "time": "2021-03-17T13:42:18+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
+            },
+            "time": "2015-06-21T13:50:34+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
+            "time": "2016-08-06T20:24:11+00:00"
+        },
+        {
+            "name": "sebastian/comparator",
+            "version": "4.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/comparator.git",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/55f4261989e546dc112258c7a75935a81a7ce382",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/diff": "^4.0",
+                "sebastian/exporter": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@2bepublished.at"
+                }
+            ],
+            "description": "Provides the functionality to compare PHP values for equality",
+            "homepage": "https://github.com/sebastianbergmann/comparator",
+            "keywords": [
+                "comparator",
+                "compare",
+                "equality"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T15:49:45+00:00"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3",
+                "symfony/process": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "https://github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:10:38+00:00"
+        },
+        {
+            "name": "sebastian/exporter",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/exporter.git",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/recursion-context": "^4.0"
+            },
+            "require-dev": {
+                "ext-mbstring": "*",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Provides the functionality to export PHP variables for visualization",
+            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "keywords": [
+                "export",
+                "exporter"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-28T05:24:23+00:00"
+        },
+        {
+            "name": "sebastian/recursion-context",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/recursion-context.git",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/cd9d8cf3c5804de4341c283ed787f099f5506172",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                }
+            ],
+            "description": "Provides functionality to recursively process PHP variables",
+            "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-26T13:17:30+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "reference": "ffced0d2c8fa8e6cdc4d695a743271fab6c38625",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2021-04-09T00:54:41+00:00"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v4.4.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "a3f7189a0665ee33b50e9e228c46f50f5acbed22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/a3f7189a0665ee33b50e9e228c46f50f5acbed22",
+                "reference": "a3f7189a0665ee33b50e9e228c46f50f5acbed22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php73": "^1.8",
+                "symfony/polyfill-php80": "^1.16",
+                "symfony/service-contracts": "^1.1|^2"
+            },
+            "conflict": {
+                "psr/log": ">=3",
+                "symfony/dependency-injection": "<3.4",
+                "symfony/event-dispatcher": "<4.3|>=5",
+                "symfony/lock": "<4.4",
+                "symfony/process": "<3.3"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0|2.0"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2",
+                "symfony/config": "^3.4|^4.0|^5.0",
+                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+                "symfony/event-dispatcher": "^4.3",
+                "symfony/lock": "^4.4|^5.0",
+                "symfony/process": "^3.4|^4.0|^5.0",
+                "symfony/var-dumper": "^4.3|^5.0"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/lock": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases the creation of beautiful and testable command line interfaces",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/console/tree/v4.4.30"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-25T19:27:26+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v4.4.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "2fe81680070043c4c80e7cedceb797e34f377bac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2fe81680070043c4c80e7cedceb797e34f377bac",
+                "reference": "2fe81680070043c4c80e7cedceb797e34f377bac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/event-dispatcher-contracts": "^1.1",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4"
+            },
+            "provide": {
+                "psr/event-dispatcher-implementation": "1.0",
+                "symfony/event-dispatcher-implementation": "1.1"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/config": "^3.4|^4.0|^5.0",
+                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+                "symfony/error-handler": "~3.4|~4.4",
+                "symfony/expression-language": "^3.4|^4.0|^5.0",
+                "symfony/http-foundation": "^3.4|^4.0|^5.0",
+                "symfony/service-contracts": "^1.1|^2",
+                "symfony/stopwatch": "^3.4|^4.0|^5.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher/tree/v4.4.30"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-04T20:31:23+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher-contracts",
+            "version": "v1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher-contracts.git",
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/84e23fdcd2517bf37aecbd16967e83f0caee25a7",
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3"
+            },
+            "suggest": {
+                "psr/event-dispatcher": "",
+                "symfony/event-dispatcher-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to dispatching event",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v1.1.9"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:19:58+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v5.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "343f4fe324383ca46792cae728a3b6e2f708fb32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/343f4fe324383ca46792cae728a3b6e2f708fb32",
+                "reference": "343f4fe324383ca46792cae728a3b6e2f708fb32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v5.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-21T12:40:44+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v5.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "a10000ada1e600d109a6c7632e9ac42e8bf2fb93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a10000ada1e600d109a6c7632e9ac42e8bf2fb93",
+                "reference": "a10000ada1e600d109a6c7632e9ac42e8bf2fb93",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Finds files and directories via an intuitive fluent interface",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v5.3.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-04T21:20:46+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v5.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "4b78e55b179003a42523a362cc0e8327f7a69b5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/4b78e55b179003a42523a362cc0e8327f7a69b5e",
+                "reference": "4b78e55b179003a42523a362cc0e8327f7a69b5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php73": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an improved replacement for the array_replace PHP function",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v5.3.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-04T21:20:46+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "reference": "46cd95797e9df938fdd2b03693b5fca5e64b01ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-19T12:13:01+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "9a142215a36a3888e30d0a9eeea9766764e96976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9a142215a36a3888e30d0a9eeea9766764e96976",
+                "reference": "9a142215a36a3888e30d0a9eeea9766764e96976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-27T09:17:38+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php73",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php73.git",
+                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fba8933c384d6476ab14fb7b8526e5287ca7e010",
+                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php73\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-19T12:13:01+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php81",
+            "version": "v1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php81.git",
+                "reference": "e66119f3de95efc359483f810c4c3e6436279436"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/e66119f3de95efc359483f810c4c3e6436279436",
+                "reference": "e66119f3de95efc359483f810c4c3e6436279436",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.23.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-21T13:25:03+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v5.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "38f26c7d6ed535217ea393e05634cb0b244a1967"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/38f26c7d6ed535217ea393e05634cb0b244a1967",
+                "reference": "38f26c7d6ed535217ea393e05634cb0b244a1967",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v5.3.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-04T21:20:46+00:00"
+        },
+        {
+            "name": "symfony/service-contracts",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "191afdcb5804db960d26d8566b7e9a2843cab3a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/191afdcb5804db960d26d8566b7e9a2843cab3a0",
+                "reference": "191afdcb5804db960d26d8566b7e9a2843cab3a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "suggest": {
+                "psr/container": "",
+                "symfony/service-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Service\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to writing services",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/v1.1.2"
+            },
+            "time": "2019-05-28T07:50:59+00:00"
+        },
+        {
+            "name": "symfony/stopwatch",
+            "version": "v5.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stopwatch.git",
+                "reference": "b24c6a92c6db316fee69e38c80591e080e41536c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/b24c6a92c6db316fee69e38c80591e080e41536c",
+                "reference": "b24c6a92c6db316fee69e38c80591e080e41536c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/service-contracts": "^1.0|^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a way to profile code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/stopwatch/tree/v5.3.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-10T08:58:57+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.10.0"
+            },
+            "time": "2021-03-09T10:59:23+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

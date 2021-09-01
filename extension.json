@@ -1,0 +1,29 @@
+{
+    "id": "symext-logger-monolog",
+    "name": "Monolog Logger",
+    "description": "A Monolog logger.",
+    "repo": "https://github.com/pointybeard/symext-logger_monolog.git",
+    "homepage": "https://github.com/pointybeard/symext-logger_monolog",
+    "type": [
+        "System"
+    ],
+    "authors": [
+        {
+            "name": "Alannah Kearney",
+            "email": "hi@alannahkearney.com",
+            "homepage": "http://www.alannahkearney.com",
+            "role": "Developer"
+        }
+    ],
+    "require": [
+        "console"
+    ],
+    "releases": [
+        {
+            "version": "1.0.0",
+            "date": "2021-08-31",
+            "min": "2.7.10",
+            "notes": "Initial release"
+        }
+    ]
+}
